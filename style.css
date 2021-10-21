@@ -17,6 +17,7 @@ body {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 /* Header */
 
 header {
@@ -30,6 +31,7 @@ header {
 #logo_reservia {
   margin-right: auto;
 }
+
 /* Nav */
 
 #mobile,
@@ -46,7 +48,6 @@ nav ul {
 nav li {
   margin-right: 50px;
 }
-
 nav a {
   font-size: 0.9em;
   font-weight: bold;
@@ -119,6 +120,7 @@ button {
   color: #000000;
   font-weight: bold;
 }
+
 /* Filtres */
 
 #filtres {
@@ -135,51 +137,9 @@ button {
   margin-left: 5px;
   font-size: 0.8em;
 }
-#block_economique {
-  display: flex;
-  margin-top: auto;
-  border: 1px solid #f2f2f2;
-  border-radius: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  outline: none;
-  text-decoration: none;
-  color: black;
-}
-#block_economique:hover {
-  color: #0065fc;
-  background-color: #f2f2f2;
-}
-#block_family {
-  display: flex;
-  margin-top: auto;
-  border: 1px solid #f2f2f2;
-  border-radius: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  outline: none;
-  text-decoration: none;
-  color: black;
-}
-#block_family:hover {
-  color: #0065fc;
-  background-color: #f2f2f2;
-}
-#block_romantique {
-  display: flex;
-  margin-top: auto;
-  border: 1px solid #f2f2f2;
-  border-radius: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  outline: none;
-  text-decoration: none;
-  color: black;
-}
-#block_romantique:hover {
-  color: #0065fc;
-  background-color: #f2f2f2;
-}
+#block_economique,
+#block_family,
+#block_romantique,
 #block_animaux {
   display: flex;
   margin-top: auto;
@@ -191,13 +151,15 @@ button {
   text-decoration: none;
   color: black;
 }
+#block_economique:hover,
+#block_family:hover,
+#block_romantique:hover,
 #block_animaux:hover {
   color: #0065fc;
   background-color: #f2f2f2;
 }
 .logo {
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
   border: 1px solid #deebff;
@@ -213,7 +175,6 @@ button {
   font-weight: bold;
   padding-right: 15px;
   padding-left: 10px;
-  margin-right: 0;
   border-left: 0;
   font-size: 1em;
 }
@@ -224,7 +185,6 @@ button {
 }
 #logo_info {
   display: flex;
-  margin-right: 5px;
   color: #0065fc;
   border: 1px solid rgba(242, 242, 242, 0.8);
   border-radius: 30px;
@@ -235,6 +195,7 @@ button {
   justify-content: center;
   font-size: 0.7em;
   margin-bottom: 25px;
+  margin-right: 5px;
 }
 #text_info {
   font-size: 0.8em;
@@ -267,42 +228,9 @@ article h2 {
   font-weight: bold;
   font-size: 1.1em;
 }
-.hebergement_gauche_haut {
-  background-color: white;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  border: 3px solid white;
-  border-radius: 15px;
-  width: 33%;
-  height: 193.28px;
-}
-.hebergement_milieu_haut {
-  background-color: white;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  border: 3px solid white;
-  border-radius: 15px;
-  width: 33%;
-  height: 193.28px;
-}
-.hebergement_droite_haut {
-  background-color: white;
-  margin-right: 0;
-  margin-bottom: 25px;
-  border: 3px solid white;
-  border-radius: 15px;
-  width: 33%;
-  height: 193.28px;
-}
-.hebergement_gauche_bas {
-  background-color: white;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  border: 3px solid white;
-  border-radius: 15px;
-  width: 33%;
-  height: 193.28px;
-}
+.hebergement_gauche_haut,
+.hebergement_milieu_haut,
+.hebergement_gauche_bas,
 .hebergement_milieu_bas {
   background-color: white;
   margin-right: 25px;
@@ -312,6 +240,7 @@ article h2 {
   width: 33%;
   height: 193.28px;
 }
+.hebergement_droite_haut,
 .hebergement_droite_bas {
   background-color: white;
   margin-right: 0;
@@ -458,41 +387,29 @@ aside p {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-#les_activites {
-  display: flex;
-}
+#les_activites,
+#activite_trio_droite,
 #activite_trio_gauche {
   display: flex;
 }
-#activite_trio_droite {
-  display: flex;
-}
-#left_column {
-  flex-direction: column;
-}
+#left_column,
 #right_column {
   flex-direction: column;
 }
-.grandes_img_activites {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  height: 85%;
-  object-fit: cover;
-}
-.moyennes_img_activites {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  height: 75%;
-  object-fit: cover;
-}
+.grandes_img_activites,
+.moyennes_img_activites,
 .petites_img_activites {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 65%;
   object-fit: cover;
+  height: 86%;
+}
+.moyennes_img_activites {
+  height: 75%;
+}
+.petites_img_activites {
+  height: 65%;
 }
 #activites a {
   outline: none;
@@ -509,7 +426,8 @@ aside p {
   font-weight: bold;
   margin: 15px 0 15px 12px;
 }
-#activite_left {
+#activite_left,
+#activite_middle_right {
   background-color: white;
   box-shadow: 0px 3px 6px #f2f2f2;
   margin-right: 26px;
@@ -533,14 +451,6 @@ aside p {
   border-radius: 15px;
   width: 266px;
   height: 148px;
-}
-#activite_middle_right {
-  background-color: white;
-  box-shadow: 0px 3px 6px #f2f2f2;
-  margin-right: 26px;
-  border-radius: 15px;
-  width: 266px;
-  height: 401px;
 }
 #activite_right_top {
   background-color: white;
@@ -571,7 +481,9 @@ footer {
   font-size: 1.2em;
   font-weight: bold;
 }
-#a_propos {
+#a_propos,
+#assistance,
+#nos_hebergements {
   width: 386px;
 }
 .footer_liste ul {
@@ -586,12 +498,6 @@ footer {
   color: #000000;
   text-decoration: none;
 }
-#nos_hebergements {
-  width: 386px;
-}
-#assistance {
-  width: 386px;
-}
 
 /* Responsive Tablette */
 
@@ -605,7 +511,7 @@ footer {
     margin-right: 0;
   }
 
-  /* Header et nav */
+  /* Header */
 
   header {
     width: 100%;
@@ -614,6 +520,9 @@ footer {
   #logo_reservia img {
     width: 40%;
   }
+
+  /* Nav */
+
   nav ul {
     margin-right: 15px;
   }
@@ -622,19 +531,6 @@ footer {
   }
   nav a {
     font-size: 1em;
-  }
-  nav a:active {
-    color: #deebff;
-    border-top: 2px solid #0065fc;
-    padding-top: 20px;
-  }
-  nav a:hover {
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
-    padding-top: 20px;
-  }
-  .inscrire {
-    color: #0065fc;
   }
   .fa-search {
     display: none;
@@ -646,9 +542,9 @@ footer {
     display: block;
   }
   article {
-    margin-bottom: 25px;
     width: auto;
     height: 500px;
+    margin-bottom: 25px;
   }
   #hebergement_top,
   #hebergement_bottom {
@@ -682,9 +578,6 @@ footer {
   }
   #populaires {
     justify-content: space-between;
-  }
-  .graph {
-    margin-bottom: 20px;
   }
   aside h2 {
     padding: 0;
@@ -722,12 +615,8 @@ footer {
     margin-left: 0;
     justify-content: space-evenly;
   }
-  #left_column {
-    flex-direction: column;
-    width: 40%;
-  }
+  #left_column,
   #right_column {
-    flex-direction: column;
     width: 40%;
   }
   #activites p {
@@ -757,15 +646,6 @@ footer {
   #activite_right_bottom {
     width: 100%;
   }
-  .grandes_img_activites {
-    object-fit: cover;
-  }
-  .moyennes_img_activites {
-    object-fit: cover;
-  }
-  .petites_img_activites {
-    object-fit: cover;
-  }
 
   /* Footer */
 
@@ -781,11 +661,10 @@ footer {
 }
 /* Responsive Iphone 8 */
 
-@media (max-width: 767px) and (min-width: 330px) {
+@media (max-width: 767px) and (min-width: 485px) {
   #bloc_page {
     width: auto;
     padding: 0;
-    background-color: white;
   }
   #header_et_corps {
     padding: 2px;
@@ -866,7 +745,6 @@ footer {
     padding-top: 0;
   }
   nav a:hover {
-    color: #0065fc;
     border-bottom: 3px solid #0065fc;
     padding-bottom: 20px;
     border-top: none;
@@ -927,10 +805,7 @@ footer {
     width: 55px;
     height: 57px;
     margin-left: 0;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-radius: 16px;
     cursor: pointer;
   }
   .search_logo {
@@ -964,15 +839,13 @@ footer {
     font-size: 1.5em;
   }
   .text_filtres {
-    font-size: 1em;
-    padding-left: 10px;
     padding-right: 10px;
   }
   #block_economique,
   #block_family,
   #block_romantique,
   #block_animaux {
-    border: 3px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 70px;
     border-left: none;
     margin: 10px 0 0 5px;
@@ -1005,7 +878,7 @@ footer {
     flex-direction: column-reverse;
   }
   aside {
-    width: 92%;
+    width: 95%;
     height: auto;
     border-radius: 0%;
     margin: 0 0 40px 0;
@@ -1060,17 +933,13 @@ footer {
   aside p {
     width: 100%;
     font-size: 1em;
-    margin-top: 2px;
-    margin-bottom: 5px;
     margin-left: 0px;
   }
   .stars_populaires {
-    color: #0065fc;
     font-size: 0.9em;
     margin: 0;
   }
   .stars_chambre_hote {
-    color: #0065fc;
     font-size: 0.9em;
     margin: 0px;
   }
@@ -1084,6 +953,7 @@ footer {
   }
 
   /* Hébergements */
+
   article {
     width: 100%;
     margin-left: 0;
@@ -1119,35 +989,28 @@ footer {
     width: 90%;
     height: 250px;
     margin: 25px 0 0 0;
-    background-color: white;
     filter: drop-shadow(1px 3px 1.75rem #f2f2f2);
-    border: 4px solid white;
     border-radius: 20px;
   }
   article h3 {
-    font-size: 1em;
     margin-left: 10px;
     margin-top: 0;
   }
   article p {
     font-size: 1em;
     margin-left: 10px;
-    margin-top: 5px;
   }
   .stars {
-    font-size: 0.8em;
     margin-left: 10px;
     margin-top: 5px;
   }
   .img_logement {
     height: 70%;
     object-fit: cover;
-    width: 100%;
     border-radius: 15px 15px 0 0;
   }
   #afficher_plus {
     margin: 25px 0 0 25px;
-    font-size: 1.1em;
     width: 70%;
   }
 
@@ -1164,17 +1027,12 @@ footer {
     margin-left: 0;
     flex-direction: column;
   }
-  #activite_trio_gauche {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
+  #activite_trio_gauche,
   #activite_trio_droite {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
+    margin: 0;
   }
   #left_column,
   #right_column {
@@ -1185,7 +1043,6 @@ footer {
   }
   #activites p {
     font-size: 1.1em;
-    font-weight: bold;
     text-align: left;
     margin-top: 10px;
     margin-left: 15px;
@@ -1204,12 +1061,37 @@ footer {
   .grandes_img_activites,
   .moyennes_img_activites,
   .petites_img_activites {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     height: 80%;
-    object-fit: cover;
   }
 
+  /* Footer */
+
+  footer {
+    flex-direction: column;
+    align-items: baseline;
+    height: auto;
+    padding: 0;
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
+  #a_propos,
+  #assistance,
+  #nos_hebergements {
+    text-align: center;
+    width: 95%;
+    font-size: 1.1em;
+    margin-left: 0;
+  }
+  .footer_liste ul > li {
+    margin-top: 10px;
+  }
+  footer h3 {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 484px) and (min-width: 330px) {
   /* Footer */
 
   footer {
