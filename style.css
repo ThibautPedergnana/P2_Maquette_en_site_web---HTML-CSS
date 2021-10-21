@@ -334,6 +334,7 @@ aside h2 {
   border-bottom-left-radius: 15px;
   width: 35%;
   height: 137px;
+  object-fit: cover;
 }
 aside a {
   display: flex;
