@@ -660,7 +660,7 @@ footer {
 }
 /* Responsive Iphone 8 */
 
-@media (max-width: 767px) and (min-width: 330px) {
+@media (max-width: 767px) {
   #bloc_page {
     width: auto;
     padding: 0;
